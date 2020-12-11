@@ -6,3 +6,8 @@ import router from "./router";
 createApp(App)
   .use(router)
   .mount("#app");
+
+App.component('sb-post', {
+  props: ['postdate'],
+  template: `<h4>{{ postdate }}</h4>`
+})
