@@ -1,0 +1,5 @@
+div id="sb-list">
+  <div v-bind:style="{ fontSize: postFontSize + 'em' }">
+    <sb-post v-for="post in posts" :key="post.id" :title="post.title"></sb-post>
+  </div>
+</div>
